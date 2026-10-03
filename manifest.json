@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Nexus Auto Slow Download",
+  "version": "1.0",
+  "description": "Automatically clicks the free \"Slow download\" button on Nexus Mods download pages.",
+  "content_scripts": [
+    {
+      "matches": ["https://www.nexusmods.com/*", "https://nexusmods.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle",
+      "all_frames": true
+    }
+  ]
+}
